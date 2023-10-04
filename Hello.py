@@ -1,4 +1,5 @@
 from flask import Flask
+import logging
 
 app = Flask(__name__)
 
@@ -15,3 +16,18 @@ def hello_world():
 </script>"""
 
     return "<p>Hello, World!</p>" +var 
+
+@app.route("/logger")
+def logger():
+    # display a log on the server side
+    #app.logger.info("Hi ! I am a log on the server side")
+    print('coucou')
+
+    # display a log on the browser side 
+    js_code = """
+    <script>
+        console.log("Hi ! I am a log on the browser side");
+    </script>
+    """
+
+    return "<p>Welcome to the logging Page</p>" + js_code
