@@ -7,25 +7,29 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FVQS2TWEVX"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+    <h1>Welcome to Clara's website !</h1>
 
-        gtag('config', 'G-FVQS2TWEVX');
-    </script>
+    <!-- Google button -->
+    <form action="https://google.com" target="_blank">
+        <input type="submit" value="Make a research on Google" />
+    </form>
     
-    <button onclick="makeGoogleRequest()">Make Google Request</button> <!-- Add the button -->
+    <!-- Google Analytics button -->
+    <form action="https://analytics.google.com/analytics/web/#/p407503460/reports/intelligenthome" target="_blank">
+        <input type="submit" value="Open my Google Analytics report"/>
+    </form>
 
-    <script>
-        function makeGoogleRequest() {
-            // Use JavaScript to make a request to Google when the button is clicked
-            var req = new XMLHttpRequest();
-            req.open("GET", "https://www.google.com/", true);
-            req.send();
-        }
-    </script>
+    <!-- Display the status code -->
+    <h2>Status Code:</h2>
+    <p>{{ status_code }}</p>
+
+    <!-- Display the cookies -->
+    <h2>Cookies:</h2>
+    <ul>
+        {% for key, value in cookies.items() %}
+            <li>{{ key }}: {{ value }}</li>
+        {% endfor %}
+    </ul>
+
 </body>
 </html>
