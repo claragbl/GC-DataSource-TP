@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "datasourceproject",
+  "private_key_id": "1df797562433a9a61d573a632d52bf8185bb094d",
+  "private_key": "000000",
+  "client_email": "000000",
+  "client_id": "106385752572250991077",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/datasourceprojectflask%40datasourceproject.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

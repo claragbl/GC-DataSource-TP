@@ -6,8 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SJDP26RN0B"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-SJDP26RN0B');
+</script>
+
 <body>
     <h1>Welcome to Clara's website !</h1>
+
+    
 
     <!-- Google button -->
     <form action="https://google.com" target="_blank">
@@ -15,13 +28,16 @@
     </form>
     
     <!-- Google Analytics button -->
-    <form action="https://analytics.google.com/analytics/web/#/p407503460/reports/intelligenthome" target="_blank">
+    <form action="https://analytics.google.com/analytics/web/#/p407503460/reports/intelligenthome/JZ3tQQM2_VuVkHk9t8WyokkumVN1XsDC7wT4qtzHS" target="_blank">
         <input type="submit" value="Open my Google Analytics report"/>
     </form>
 
     <!-- Display the status code -->
-    <h2>Status Code:</h2>
-    <p>{{ status_code }}</p>
+    <!-- <h2>Status Code:</h2>
+    <p>200</p> -->
+
+    <h2> Active Users </h2>
+    {{active_users}}
 
     <!-- Display the cookies -->
     <h2>Cookies:</h2>
