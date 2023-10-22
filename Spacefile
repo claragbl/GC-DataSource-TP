@@ -6,5 +6,5 @@ micros:
     engine: python3.9
     primary: true
     run: gunicorn Hello:app
-    dev: .venv/bin/flask --app Hello run
+    dev: .venv/bin/flask --app Hello.py run --debug
     public: true
