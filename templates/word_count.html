@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Word Count Results</title>
+</head>
+<body>
+    <h1>Word Count Results</h1>
+    
+    <h2>Word Count using a Dictionary</h2>
+    <!-- <p>Execution time: {{ execution_time_dict }} seconds</p> -->
+    <table>
+        <thead>
+            <tr>
+                <th>Word</th>
+                <th>Count</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for word, count in word_count_dict.items() %}
+                <tr>
+                    <td>{{ word }}</td>
+                    <td>{{ count }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    
+    <h2>Word Count using Counter</h2>
+    <!-- <p>Execution time: {{ execution_time_counter }} seconds</p> -->
+    <table>
+        <thead>
+            <tr>
+                <th>Word</th>
+                <th>Count</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for word, count in word_count_counter.items() %}
+                <tr>
+                    <td>{{ word }}</td>
+                    <td>{{ count }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

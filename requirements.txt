@@ -2,3 +2,4 @@ Flask
 gunicorn
 google-analytics-data
 pytrends
+matplotlib
